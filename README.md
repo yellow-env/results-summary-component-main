@@ -1,25 +1,25 @@
-# Frontend Mentor - Results summary component solution
+# Frontend Mentor - Results Summary Component Solution
 
-This is a solution to the [Results summary component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+![Design preview for the Results summary component coding challenge](./design/desktop-preview.jpg)
+*(Kalau preview.jpg ada di root atau design/, ganti pathnya ya~)*
 
 ## Table of contents
 
 - [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-  - [AI Collaboration](#ai-collaboration)
+- [The challenge](#the-challenge)
+- [My solution](#my-solution)
+- [Links](#links)
+- [Built with](#built-with)
+- [What I learned](#what-i-learned)
+- [Useful resources](#useful-resources)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
+
+This is my solution to the **Results Summary Component** challenge from Frontend Mentor. A clean, responsive card that shows your overall result score in a glowing circle, plus a breakdown of category scores (Reaction, Memory, Verbal, Visual) with colorful icons and bars.
+
+Built it with vanilla tech supaya fokus ke HTML/CSS layout & styling — plus sedikit JS buat dynamic load dari data.json biar lebih fleksibel.
 
 ### The challenge
 
@@ -27,97 +27,57 @@ Users should be able to:
 
 - View the optimal layout for the interface depending on their device's screen size
 - See hover and focus states for all interactive elements on the page
-- **Bonus**: Use the local JSON data to dynamically populate the content
+
+Bonus (optional): Populate the summary section dynamically using the provided data.json file.
+
+[Live challenge page →](https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV)
+
+## My solution
+
+- Pixel-perfect match dengan design (gradient background, circle result glowing, kategori warna spesifik: merah Reaction, kuning Memory, hijau Verbal, biru Visual).
+- Fully responsive: desktop dua kolom side-by-side, mobile stack vertikal smooth.
+- Hover/focus state di button Continue (gradient shift + scale kecil biar interaktif).
+- Dynamic summary dari data.json via fetch JS — biar gampang update skor tanpa ubah HTML.
+- Clean code: semantic HTML, CSS variables buat theme mudah, flexbox/grid buat layout.
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![My solution screenshot](./preview.jpg)
+*(Tambahin screenshot desktop & mobile kalau bisa, atau pakai yang ada)*
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
+## Links
 
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
+- Solution URL: [GitHub Repo](https://github.com/yellow-env/results-summary-component-main)
+- Live Site URL: [https://yellow-env.github.io/results-summary-component-main](https://yellow-env.github.io/results-summary-component-main)
 
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
+## Built with
 
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+- Semantic HTML5
+- CSS custom properties (variables)
+- Flexbox & CSS Grid
+- Mobile-first responsive design
+- Vanilla JavaScript (fetch API untuk load data.json)
 
-### Links
+## What I learned
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Lebih dalam paham cara bikin gradient keren di circle & background tanpa overkill.
+- Praktek fetch JSON lokal + populate DOM dynamically — bagus buat latihan JS dasar.
+- Polishing hover/focus states & transitions biar UI terasa hidup meski simple project.
+- Pentingnya clean repo & README bagus buat showcase skill ke orang lain.
 
-## My process
+## Useful resources
 
-### Built with
-
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
-
-### What I learned
-
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
-
-### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
-
-### AI Collaboration
-
-Describe how you used AI tools (if any) during this project. This helps demonstrate your ability to work effectively with AI assistants.
-
-- What tools did you use (e.g., ChatGPT, Claude, GitHub Copilot)?
-- How did you use them (e.g., debugging, generating boilerplate, brainstorming solutions)?
-- What worked well? What didn't?
-
-**Note: Delete this note and the content above if you didn't use AI, or replace with your own experience.**
+- [Frontend Mentor Challenge Page](https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV) — design files & style guide.
+- [CSS Gradient Generator](https://cssgradient.io/) — bantu bikin gradient circle & bg.
+- [MDN Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) — referensi JS fetch.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+- GitHub - [@yellow-env](https://github.com/yellow-env)
+- Frontend Mentor - [@yellow-env](https://www.frontendmentor.io/profile/yellow-env) *(kalau udah punya profile, tambahin linknya ya~)*
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
+Big thanks to **Frontend Mentor** buat challenge keren ini! Membantu banget buat improve skill HTML/CSS/JS secara real-project.
 
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+Jackpot kalau kamu submit solution ini ke FM — pasti dapet feedback bagus~
